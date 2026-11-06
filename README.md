@@ -35,3 +35,23 @@ Project repository initialized, data model defined, and core requirements specif
 ```bash
 git clone git@github.com:tnli/tori-tracker.git
 cd tori-tracker
+```
+
+### 2. Set up virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 3. Initialize the database
+```bash
+flask --app app init-db
+```
+
+### 4. Run the development server
+```bash
+flask --app app run --debug
+```
+
+Access the application in your browser at `http://127.0.0.1:5000\`.
